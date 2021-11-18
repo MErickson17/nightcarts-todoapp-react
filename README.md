@@ -13,3 +13,6 @@ This application is a basic todo list app made with the Next.js framework, using
   * On the home page, click "to do app" to view the app page. On this page you can choose to add, edit, or delete a todo item.
 
 ## Notes
+- This is the react icon library: [here](https://react-icons.github.io/react-icons/)
+- SVGR takes svgs and converts them into react components [here](https://react-svgr.com/docs/cli/)
+- SVGO is a tool that optimizes svgs. There is an online tool and an npm package.
