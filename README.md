@@ -1,18 +1,37 @@
-# Night C Arts - Todo List App
-## Night C Arts
-My brand name is based off of the screen name I use when I draw and post art.
+# NEXT.js Firebase
 
-## About the Application
-This application is a basic todo list app made with the Next.js framework, using firebase for data, and deployed to vercel.
+### Install the following moudles
+ ```npm
+    npm install react-firebase-hooks react-icons
+    npm install -D babel-plugin-styled-components
+ ```
 
-## How to start and run the project
-* To start the app with a locally downloaded copy, first run `npm install` in the terminal to install all project modules. Then run `npm run dev` to run the project on a local server. 
-  * On the home page, click "to do app" to view the app page. On this page you can choose to add, edit, or delete a todo item.
 
-* To access the project online, visit the website, deployed to Vercel, [here](https://nightcarts.vercel.app/).
-  * On the home page, click "to do app" to view the app page. On this page you can choose to add, edit, or delete a todo item.
+### Package.json File
+your package.json file should contain the following moudles. It is fine to have different minor versions.
+If you have a different major version the first number in the version update your package using ```npm update package@version-number``` 
+ ```json
+  "dependencies": {
+    "firebase": "^9.5.0",
+    "next": "^12.0.4",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "react-firebase-hooks": "^4.0.1",
+    "react-icons": "^4.3.1",
+    "styled-components": "^5.3.3"
+  },
+  "devDependencies": {
+    "@svgr/cli": "^5.5.0",
+    "babel-plugin-styled-components": "^1.13.3",
+    "sass": "^1.43.4"
+  }
+
+ ```
 
 ## Notes
 - This is the react icon library: [here](https://react-icons.github.io/react-icons/)
+  - all these svg are already built as react icons
+  - gives access to all the major icon libraries
 - SVGR takes svgs and converts them into react components [here](https://react-svgr.com/docs/cli/)
 - SVGO is a tool that optimizes svgs. There is an online tool and an npm package.
+- Robin Wieruch has a great blog that includes a ton of react information [here](https://www.robinwieruch.de/)
