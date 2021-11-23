@@ -1,5 +1,5 @@
 import firebase from "../libs/firebase"
-import {useState} from 'react';
+import { useState } from "react";
 import { useRouter } from "next/router";
 import useSWR from 'swr';
 
