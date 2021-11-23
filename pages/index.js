@@ -1,6 +1,6 @@
 import firebase from "../libs/firebase"
-import {useState} from "react";
-import {useRouter} from "next/router";
+import { useState } from "react";
+import { useRouter } from "next/router";
 import useSWR from 'swr';
 
 import styled from "styled-components";
@@ -23,7 +23,7 @@ const Wrapper = styled.div`
 
 const fetcher = (...args) => fetch(...args).then(res => res.json())
 
-function index(props) {
+function Index(props) {
   //console.log(firebase)
   const [isValidUser, setValidUser] = useState(false)
   const router = useRouter()
@@ -46,5 +46,5 @@ function index(props) {
   )
 }
 
-export default index
+export default Index
 
