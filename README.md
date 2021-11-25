@@ -1,5 +1,9 @@
 # NEXT.js Firebase
 
+> A todo app created using the Next.js framework
+> 
+> Following the class example in DMIT2008
+
 ### Install the following moudles
  ```npm
     npm install react-firebase-hooks react-icons
