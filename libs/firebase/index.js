@@ -1,9 +1,12 @@
 // Build the App instance of Firebase
-import { initializeApp } from 'firebase/app';
+import { initializeApp } from '@firebase/app'
+import { getFirestore } from '@firebase/firestore'
+import { getAuth } from '@firebase/auth'
+import firebaseConfig from './firebaseConfig'
 
-import firebaseConfig from "./firebaseConfig";
 
-const firebase = initializeApp(firebaseConfig);
+const app = initializeApp(firebaseConfig) // connects us to firebase w/ firebaseConfig
+const db = getFirestore(); // returns a connection to the firestore database
+const auth = getAuth(); // returns a connection to the authentication service
 
-
-export default firebase
+export {app, db, auth} // exporting these connections if needed
