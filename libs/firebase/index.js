@@ -10,3 +10,4 @@ const db = getFirestore(); // returns a connection to the firestore database
 const auth = getAuth(); // returns a connection to the authentication service
 
 export {app, db, auth} // exporting these connections if needed
+
